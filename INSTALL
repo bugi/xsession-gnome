@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for f in $( find usr -type f )
+do
+	cp -a "$f" /"$f"
+	chown root: /"$f"
+	chmod go=u,go-w /"$f"
+done

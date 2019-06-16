@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GNOME Flashback (xsession-gnome)
+Comment=GNOME scaffolding for your .xsession-gnome file
+Exec=xsession-gnome-flashback-session
+TryExec=xsession-gnome-flashback-session
+Type=Application
+DesktopNames=GNOME-Flashback;GNOME
