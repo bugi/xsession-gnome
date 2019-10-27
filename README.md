@@ -1,6 +1,18 @@
 # xsession-gnome-flashback
 
-Gnome support for .xsession
+Gnome-flashback support for .xsession
+
+## What is it not?
+
+You probably want [xsession-gnome](https://github.com/bugi/xsession-gnome)
+instead.  Flashback provides a panel, notifier, and other stuff that you
+probably don't want if you're using a .xsession file.
+
+This use of gnome-flashback doesn't work for me with Ubuntu 19.10 (PopOs
+variant).  Please submit a pull request if you get it working.
+
+I am taking pull requests, but have otherwise stopped maintaining this
+software.
 
 ## What is it?
 
