@@ -6,16 +6,16 @@
 if [ -n "$DESKTOP_AUTOSTART_ID" ]
 then
   dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.RegisterClient "string:xsession-gnome" "string:$DESKTOP_AUTOSTART_ID"
+
 fi
 
-echo "Executing xsession-gnome-flashback session configuration script."
+echo "Executing xsession-gnome session configuration script."
 
 # These gsettings really only need to be run once.  Gnome
 # retains them between sessions.
 
 # Required for plain window managers and gnome-shell to coexist.
 gsettings set org.gnome.desktop.background show-desktop-icons false
-gsettings set org.gnome.gnome-flashback desktop-background false
 
 
 # The user is expected to setup and run their own window manager

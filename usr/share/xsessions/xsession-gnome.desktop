@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=xsession + GNOME
+Comment=GNOME scaffolding for your .xsession-gnome file
+Exec=/usr/bin/xsession-gnome-session
+TryExec=xsession-gnome-session
+Type=Application
+X-LightDM-DesktopName=xsession-gnome
+DesktopNames=GNOME
+X-Ubuntu-Gettext-Domain=gnome-session-3.0

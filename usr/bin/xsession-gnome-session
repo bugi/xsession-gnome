@@ -1,0 +1,22 @@
+#!/bin/bash
+
+exec >"${HOME}/.xsession-gnome.log.session" 2>&1
+
+if [ -z $XDG_CURRENT_DESKTOP ]
+then
+    export XDG_CURRENT_DESKTOP="GNOME-Xsession:GNOME"
+fi
+
+ARGS=()
+ARGS+=( gnome-session )
+if false && [ -d "${XDG_RUNTIME_DIR}/systemd" ]
+then
+  ARGS+=( --systemd )
+else
+  ARGS+=( --builtin )
+fi
+ARGS+=( --session=xsession-gnome )
+# ARGS+=( --disable-acceleration-check )
+
+# exec env GNOME_SHELL_SESSION_MODE=classic "${ARGS[@]}" "$@"
+exec "${ARGS[@]}" "$@"

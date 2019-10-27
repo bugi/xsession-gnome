@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=xsession-gnome
+Comment=gnome integration for xsession
+GenericName=xsession with gnome
+Exec=xsession-gnome
+X-GNOME-Provides=windowmanager
+NoDisplay=true
+X-GNOME-Autostart-Phase=WindowManager
+X-GNOME-Autostart-Notify=false

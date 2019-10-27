@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=xsession-gnome-flashback
-Comment=Improved dynamic tiling window manager
-Exec=xsession-gnome-flashback
-X-GNOME-WMName=xsession-gnome-flashback
-X-GNOME-Autostart-Phase=WindowManager
-X-GNOME-Provides=windowmanager
-X-GNOME-Autostart-Notify=false
