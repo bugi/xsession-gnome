@@ -1,29 +1,26 @@
-# xsession-gnome-flashback
+# xsession-gnome
 
-Gnome-flashback support for .xsession
+Gnome support for user's .xsession file
 
 ## What is it not?
 
-You probably want [xsession-gnome](https://github.com/bugi/xsession-gnome)
-instead.  Flashback provides a panel, notifier, and other stuff that you
-probably don't want if you're using a .xsession file.
+This provides no GUI of its own.  It is entirely dependent upon the user
+to supply that via their .xsession-gnome file.
 
-This use of gnome-flashback doesn't work for me with Ubuntu 19.10 (PopOs
-variant).  Please submit a pull request if you get it working.
-
-I am taking pull requests, but have otherwise stopped maintaining this
-software.
+There's no top panel, no builtin notifier, nothing like that.
+If that is what you want, take a look at
+[xsession-gnome-flashback](https://github.com/bugi/xsession-gnome-flashback).
 
 ## What is it?
 
-xsession-gnome-flashback provides scaffolding to help you run your normal
+Xsession-gnome provides scaffolding to help you run your normal
 window manager within a Gnome session.
 
 A Gnome session provides desktop features like managing some or all of your
 wifi, bluetooth, displays, keyboards, and mice.
 
-After setting up the Gnome session, your .xsession file takes over
-and you can run any window manager you like.
+After setting up the Gnome session, your .xsession-gnome or .xsession file
+takes over and you can run any window manager you like.
 
 ## Why?
 
@@ -34,7 +31,7 @@ get control where I want it, but I can let Gnome handle the parts I don't
 want to handle.
 
 Why not just use [Gnome Flashback](https://wiki.gnome.org/Projects/GnomeFlashback)
-directly?  Or [Regolith Linux](http://regolith-linux.org/)?
+or [Regolith Linux](http://regolith-linux.org/)?
 Those and others are specific to a given window manager.  This general
 solution enables myself and others to customize as we please, including
 using other window managers like
@@ -72,7 +69,7 @@ sudo apt install gnome-session-flashback
 
 ## Install Display Manager and Session Manager Files
 
-In order to run a .xsession file within Gnome-Flashback, you will
+In order to run a .xsession file within Gnome, you will
 need to select the option from your display manager.  To provide
 that option, install several files.
 
@@ -96,17 +93,26 @@ find yourself confused and you should reread this document from
 the beginning.
 
 
+## Integrate With Your Window Manager
+
+The i3-gnome project maintains a list of
+[tips and tricks](https://github.com/i3-gnome/i3-gnome/wiki/Tips-&-Tricks)
+for integrating i3 with gnome.  Those may give you a starting
+point for further integrating with your window manager.
+
+
 # Thanks
 
-My most immediate inspiration was [Regolith Linux](http://regolith-linux.org/).
-Regolith's release inspired me to finish, clean up, and package
-my tools for general consumption.  Regolith's
-files were also cleaner and better organized than mine were,
-so I rebased mine from the
-[regolith-gnome-flashback](https://github.com/regolith-linux/regolith-gnome-flashback)
-part of Regolith.
+Of these inspirations, the final work most closely resembles
+[i3-gnome](https://github.com/i3-gnome/i3-gnome).  That finally
+showed me the light beyond gnome-flashback.
+
+[Regolith Linux](http://regolith-linux.org/)
+gave me the push I needed to finish, clean up, and package
+my tools for general consumption.
 
 Some other inspirations included:
+* https://github.com/regolith-linux/regolith-gnome-flashback
 * https://wiki.archlinux.org/index.php/GNOME/Flashback
 * https://wiki.gnome.org/Projects/GnomeFlashback
 * http://zork.net/~st/jottings/gnome-i3.html
